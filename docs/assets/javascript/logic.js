@@ -13,19 +13,35 @@ function displayGif () {
         method:"GET"
     })
     .then (function(response) {
+        console.log(response.data)
         let gifs = response.data;
         for (let i = 0; i < gifs.length; i++) {
         let newDiv = $("<div>");
         let rating = gifs[i].rating;
         let p = $("<p>").text("Rating: " + rating);
         let imgTag = $("<img>");
-        imgTag.attr("src", gifs[i].images.fixed_height.url);
+        imgTag.attr("src", gifs[i].images.fixed_height_still.url);
+        imgTag.addClass("gifs")
         newDiv.prepend(p);
         newDiv.prepend(imgTag)
         $("#results").prepend(newDiv)
         }
     })
 }
+
+function animate () {
+    if (this.data(images.fixed_height_still.url)) {
+        console.log("yes")
+    }
+}
+
+$("#submit").on("click", function (event){
+    event.preventDefault();
+    let newTeam = $("#searchterm").val().trim();
+    teams.push(newTeam);
+    generateButtons();
+    
+})
 
 let generateButtons = function () {
     $("#buttons").empty();
@@ -38,5 +54,6 @@ let generateButtons = function () {
     }
   }
 $(document).on("click", ".team", displayGif);
+$(document).on("click", ".gifs", animate);
 generateButtons()
 })
