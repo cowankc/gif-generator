@@ -13,15 +13,16 @@
 </head>
 
 <body>
-    <div class="row col-lg-12" id="buttons"></div>
+    <header class="row offset-lg-4 col-lg-4 text-center h1 font-weight-bold text-success mt-3 mb-5">Sport's Giphy Generator</header>
+    <div class="row col-lg-12 mb-4" id="buttons"></div>
     <section class="row">
-        <div class="col-lg-8" id="results"></div>
-        <div class="col-lg-4" >
+        <div class="col-lg-8" height=500px id="results"></div>
+        <div class="col-lg-3 mt-5" id="form" >
             <form>
                 <div class="form-group">
-                    <label for="searchterm">Add a Sports Team</label>
+                    <label for="searchterm" class="font-weight-bold ml-5 mb-3 h2 text-danger">Add a Sports Team</label>
                     <input type="text" class="form-control" id="searchterm" placeholder="Enter Team Name">
-                    <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+                    <button type="submit" class="btn btn-danger mt-3" id="submit">Submit</button>
             </form>
         </div>
     </section>

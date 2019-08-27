@@ -1,7 +1,15 @@
 .team {
     background-color: aquamarine;
     border: 2px solid blue;
+    border-radius: 25px;
     margin: 10px 5px 5px 5px;
     color: blue;
     font-size: 18px
+}
+
+#form {
+    background-color: lightsalmon;
+    border: 2px solid red;
+    border-radius: 25px;
+    height: 162px
 }
