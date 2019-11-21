@@ -1,3 +1,9 @@
+body {
+    background: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .team {
     background-color: aquamarine;
     border: 2px solid blue;
@@ -11,5 +17,5 @@
     background-color: lightsalmon;
     border: 2px solid red;
     border-radius: 25px;
-    height: 162px
+    height: 200px
 }
