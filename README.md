@@ -10,9 +10,13 @@ JavaScript, jQuery, Bootstrap, AJAX
 Clone th repo to your computer and run locally by coping :
 
 HTTPS:
-        $ git clone https://github.com/cowankc/gif-generator.git
+```
+$ git clone https://github.com/cowankc/gif-generator.git
+```
 
 SSH: 
-        $ git clone git@github.com:cowankc/gif-generator.git
+```
+$ git clone git@github.com:cowankc/gif-generator.git
+```
 
 followed by opening the index page in your browser. 
